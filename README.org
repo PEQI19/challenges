@@ -1,0 +1,58 @@
+#+Title: PEQI 2019: Challenges
+
+* Challenges
+
+  We have prepared two sets of challenges which you can choose to work on
+  during the hackathon. The first set is about integrating QKD into OpenSSL to
+  enable running quantum encrypted TLS connections. The other set is a more
+  open-ended exploration of distributed quantum protocols and applications.
+
+** OpenSSL
+
+   Main link: https://github.com/PEQI19/PEQI-OpenSSL
+
+   The goal of this challenge is to run a user-level application over a
+   connection encrypted using a QKD generated key such as a browser accessing a
+   web page over HTTPS.
+
+   This challenge consists of two parts:
+   1. Integrate a QKD API into OpenSSL
+   2. Implement the QKD API library/system
+
+   The full challenge description and additional guides are available in [[https://github.com/PEQI19/PEQI-OpenSSL][this
+   repository]].
+
+*** Skills required
+
+    This challenge will require you to modify the open source OpenSSL library
+    and implement a QKD system in C. Therefore, you should be comfortable with
+    the C language.
+
+    Knowledge of QKD protocols is not required, but would be helpful.
+    Instructions and pseudocode are provided for implementing the QKD system.
+
+** Quantum Protocol Zoo
+
+   Main link: https://docs.google.com/spreadsheets/d/1jiNrwHp9mOP1rv2L70fuviRThhhmLrhrLqDbcOx4pLM/edit?invite=CPfv_qoL&ts=5dbab30f#gid=0
+
+   This is an open-ended set of challenges based on the protocols described in
+   the [[https://wiki.veriqloud.fr/index.php?title=Main_Page][Quantum Protocol Zoo]]. There are two categories of challenges in this
+   group:
+   1. Implement the protocols using SimulaQron
+   2. Design and implement applications that use these protocols
+
+   A summary of all the protocols in the protocol zoo and their difficulty
+   ratings are available in [[https://docs.google.com/spreadsheets/d/1jiNrwHp9mOP1rv2L70fuviRThhhmLrhrLqDbcOx4pLM/edit?invite=CPfv_qoL&ts=5dbab30f#gid=0][this spreadsheet]]. If a protocol has already been
+   implemented, a link will be available to the relevant GitHub repository.
+
+*** Skills required
+
+    The SimulaQron network simulator has CQC APIs implemented in [[https://github.com/SoftwareQuTech/CQC-Python][Python]], [[https://github.com/SoftwareQuTech/CQC-C][C]], and
+    [[https://crates.io/crates/cqc][Rust]] so you should be comfortable with at least one of these languages.
+
+    No quantum protocol knowledge is required. Descriptions are available in
+    the [[https://wiki.veriqloud.fr/index.php?title=Main_Page][Quantum Protocol Zoo wiki]].
+
+* SimulaQron
+
+  Manual: [[simulaqron.pdf][simulaqron.pdf]]
